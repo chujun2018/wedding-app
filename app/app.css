@@ -1,0 +1,59 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.bg-img-default {
+    background-image:url("http://www.jr-studio.co.uk/Photography/wp-content/uploads/2014/08/IMG_61361.jpg");
+    background-repeat:repeat-x;
+    background-size: 100%;
+}
+
+.bg-img-uk {
+    background-image:url("http://www.doershow.com/uploads/allimg/110315/150I22V3-56.jpg");
+    background-repeat:repeat-x;
+    background-size: 100%;
+}
+
+.bg-img-fr {
+    background-image:url("http://link.photo.pchome.com.tw/s08/chyn1979/8/124615679331");
+    background-repeat:repeat-x;
+    background-size: 100%;
+}
+
+.bg-img-sw {
+    background-image:url("http://www.mapsofworld.com/images/world-countries-flags/sweden-flag.gif");
+    background-repeat:repeat-x;
+    background-size: 100%;
+}
+
+div {
+    border-radius: 10px;
+}
+

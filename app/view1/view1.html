@@ -1,0 +1,38 @@
+<div class="container">
+
+    <!--<div class="row">-->
+    <!--<div class="col-md-4" style="text-align:center;">-->
+    <!--<button class="btn btn-primary" style="height:75px;width:75px;border-radius: 75px;"><b>{{language.uk}}</b>-->
+    <!--</button>-->
+    <!--</div>-->
+    <!--<div class="col-md-4" style="text-align:center;">-->
+    <!--<button class="btn btn-primary" style="height:75px;width:75px;border-radius: 75px;"><b>{{language.fr}}</b>-->
+    <!--</button>-->
+    <!--</div>-->
+    <!--<div class="col-md-4" style="text-align:center;">-->
+    <!--<button class="btn btn-primary" style="height:75px;width:75px;border-radius: 75px;"><b>{{language.sw}}</b>-->
+    <!--</button>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div style="text-align:center;" >
+        <img ng-src="{{ukPictures[index].url}}">
+    </div>
+    <div class="row" style="text-align:center;">
+        <div class="col-md-6" >
+            <button type="button" class="btn btn-primary">
+              {{language.previous}}
+                <i class="glyphicon glyphicon-chevron-left"></i>
+            </button>
+        </div>
+        
+        <div class="col-md-6" >
+            <button type="button" class="btn btn-primary">
+                {{language.next}}
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+
+</div>
+
