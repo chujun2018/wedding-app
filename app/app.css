@@ -30,9 +30,17 @@
 }
 
 .bg-img-default {
-    background-image:url("http://www.jr-studio.co.uk/Photography/wp-content/uploads/2014/08/IMG_61361.jpg");
+    background-image:url("http://www.100percentoptical.com/images/2014/10/london.jpg");
     background-repeat:repeat-x;
     background-size: 100%;
+
+}
+
+.bg-img-france {
+    background-image:url("http://img0.mxstatic.com/wallpapers/20d68c77a63c018bc59df097b24f59ad_large.jpeg");
+    background-repeat:repeat-x;
+    background-size: 100%;
+
 }
 
 .bg-img-uk {

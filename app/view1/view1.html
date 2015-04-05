@@ -1,38 +1,46 @@
-<div class="container">
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <div style="text-align:center;">
+                    <button class="btn btn-primary" style="height:75px;width:75px;border-radius: 75px;" ng-click="change2Uk()"><b>{{language.uk}}</b>
+                    </button>
+                </div>
+                <br>
 
-    <!--<div class="row">-->
-    <!--<div class="col-md-4" style="text-align:center;">-->
-    <!--<button class="btn btn-primary" style="height:75px;width:75px;border-radius: 75px;"><b>{{language.uk}}</b>-->
-    <!--</button>-->
-    <!--</div>-->
-    <!--<div class="col-md-4" style="text-align:center;">-->
-    <!--<button class="btn btn-primary" style="height:75px;width:75px;border-radius: 75px;"><b>{{language.fr}}</b>-->
-    <!--</button>-->
-    <!--</div>-->
-    <!--<div class="col-md-4" style="text-align:center;">-->
-    <!--<button class="btn btn-primary" style="height:75px;width:75px;border-radius: 75px;"><b>{{language.sw}}</b>-->
-    <!--</button>-->
-    <!--</div>-->
-    <!--</div>-->
-    <div style="text-align:center;" >
-        <img ng-src="{{ukPictures[index].url}}">
-    </div>
-    <div class="row" style="text-align:center;">
-        <div class="col-md-6" >
-            <button type="button" class="btn btn-primary">
-              {{language.previous}}
-                <i class="glyphicon glyphicon-chevron-left"></i>
-            </button>
+                <div style="text-align:center;">
+                    <button class="btn btn-primary" style="height:75px;width:75px;border-radius: 75px;" ng-click="change2France()"><b>{{language.fr}}</b>
+                    </button>
+                </div>
+                <br>
+
+                <div style="text-align:center;">
+                    <button class="btn btn-primary" style="height:75px;width:75px;border-radius: 75px;"><b>{{language.sw}}</b>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-11">
+                <div style="text-align:center;">
+                    <img ng-src="{{ukPictures[index].url}}" style="width:800px">
+                </div>
+                <br><br>
+
+                <div class="row" style="text-align:center;">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary " ng-click="previousPhoto(ukPictures)">
+                            {{language.previous}}
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary " ng-click="nextPhoto(ukPictures)">
+                            {{language.next}}
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
-        <div class="col-md-6" >
-            <button type="button" class="btn btn-primary">
-                {{language.next}}
-                <i class="glyphicon glyphicon-chevron-right"></i>
-            </button>
-        </div>
+
+
     </div>
-
-
-</div>
-
