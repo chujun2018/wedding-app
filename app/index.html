@@ -33,9 +33,9 @@
       </div>
       <div>
         <ul class="nav navbar-nav">
-          <li class=""><a href="#/view1">{{language.home}}</a></li>
-          <li class=""><a href="#/view2">{{language.phtographer}}</a></li>
-          <li class=""><a href="#">{{language.contact}}</a></li>
+          <li class="{{mainActive}}"><a href="#/view1">{{language.home}}</a></li>
+          <li class=""><a href="#/view2" >{{language.phtographer}}</a></li>
+          <li class=""><a href="" data-toggle="modal" data-target="#myModal">{{language.contact}}</a></li>
         </ul>
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
@@ -56,6 +56,24 @@
     </div>
 </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">{{language.contact}}</h4>
+        </div>
+        <div class="modal-body">
+          <p>Mobile: 07988046179</p>
+          <p>Email: wedding_photos@hotmail.com</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

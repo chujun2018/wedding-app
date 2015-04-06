@@ -55,13 +55,21 @@
     background-size: 100%;
 }
 
-.bg-img-sw {
-    background-image:url("http://www.mapsofworld.com/images/world-countries-flags/sweden-flag.gif");
+.bg-img-it {
+    background-image:url("http://www.girlsseetheworld.com/wp-content/uploads/2014/09/italy_test.jpg");
     background-repeat:repeat-x;
     background-size: 100%;
 }
 
 div {
     border-radius: 10px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
 }
 
