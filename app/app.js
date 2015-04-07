@@ -16,7 +16,7 @@ config(['$routeProvider', function($routeProvider, $rootScope, $scope) {
     var englishLang = {
       title : 'Wedding Photography',
       home : 'Home',
-      phtographer : 'Wedding Photographers',
+      phtographer : 'Photographers',
       contact : 'Customer Service',
       search : 'Search',
       uk : 'UK',
@@ -27,7 +27,10 @@ config(['$routeProvider', function($routeProvider, $rootScope, $scope) {
       kr : 'Korea',
       previous :'previous',
       next:'next',
-      getInTouch:'Contact Photographers'
+      getInTouch:'Contact Photographers',
+      guide:'Guide',
+      needHelp:'Need Help?',
+      call:'Contact'
     };
 
       var chineseLang = {
@@ -44,7 +47,10 @@ config(['$routeProvider', function($routeProvider, $rootScope, $scope) {
         kr : '韩国',
               previous :'上一张',
               next:'下一张',
-              getInTouch:'联系摄影师'
+              getInTouch:'联系摄影师',
+                    guide:'指南',
+                    needHelp:'咨询帮助',
+                    call:'联系'
       };
      $rootScope.language = {};
     $rootScope.language = chineseLang;
