@@ -16,7 +16,7 @@
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 
 </head>
-<body class="{{background}}">
+<body>
   <!--<ul class="menu">-->
     <!--<li><a href="#/view1">view1</a></li>-->
     <!--<li><a href="#/view2">view2</a></li>-->
@@ -26,14 +26,14 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" ng-show="false">
     <div class="container-fluid" ng-controller="mainCtrl  ">
       <div class="navbar-header">
         <a class="navbar-brand">{{language.title}}</a>
       </div>
       <div>
         <ul class="nav navbar-nav">
-          <li class="{{mainActive}}"><a href="#/view1">{{language.home}}</a></li>
+          <li class="{{mainActive}}"><a href="#/home">{{language.home}}</a></li>
           <li class=""><a href="#/view2" >{{language.phtographer}}</a></li>
           <li class=""><a href="" data-toggle="modal" data-target="#myModal">{{language.contact}}</a></li>
         </ul>
@@ -50,7 +50,7 @@
       </div>
     </div>
   </nav>
-  <div class="container-fluid">
+  <div>
     <div>
       <div ng-view></div>
     </div>
@@ -84,6 +84,7 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
+  <script src="home/home.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>

@@ -3,12 +3,12 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
-  'myApp.view1',
+  'myApp.home',
   'myApp.view2',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider, $rootScope, $scope) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+  $routeProvider.otherwise({redirectTo: '/home'});
 
 }])
 
@@ -30,7 +30,10 @@ config(['$routeProvider', function($routeProvider, $rootScope, $scope) {
       getInTouch:'Contact Photographers',
       guide:'Guide',
       needHelp:'Need Help?',
-      call:'Contact'
+      call:'Contact',
+      signUp:'Sign up',
+      logIn:'Log in',
+      photographerPortal:'Photographer Portal'
     };
 
       var chineseLang = {
@@ -53,7 +56,7 @@ config(['$routeProvider', function($routeProvider, $rootScope, $scope) {
                     call:'联系'
       };
      $rootScope.language = {};
-    $rootScope.language = chineseLang;
+    $rootScope.language = englishLang;
     $rootScope.switch2English = function(){
         $rootScope.language = englishLang;
     };
