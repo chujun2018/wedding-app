@@ -71,8 +71,31 @@
     background-image: none
 }
 
-.nav .language-nonactive a:hover {
-    background:rgba(0,0,0,0);
+.nav>li>a:hover {
+    background-color: transparent;
 }
+
+.checkbox, .radio {
+  position: relative;
+  display: block;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+#bottom-div {
+    padding-top: 300px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 25%;
+}
+
+#bottom-div-background {
+    padding-top: 400px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 25%;
+}
+
+
 
 

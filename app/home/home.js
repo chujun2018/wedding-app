@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.home', ['ngRoute'])
+angular.module('myApp.home', ['ngRoute', 'ui.bootstrap.datetimepicker'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {

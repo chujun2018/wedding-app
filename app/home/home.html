@@ -2,33 +2,90 @@
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#/home"><h5><b><font color="white"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> {{language.title}}</font></b></h5></a>
+                <a class="navbar-brand" href="#/home"><h5><b><font color="white"><span
+                        class="glyphicon glyphicon-camera" aria-hidden="true"></span> {{language.title}}</font></b></h5>
+                </a>
             </div>
             <div>
                 <ul class="nav pull-right navbar-nav">
                     <li class=""><a href="#"><b><h5><font color="white">{{language.signUp}}</font></h5></b></a></li>
                     <li class=""><a href="#"><b><h5><font color="white">{{language.logIn}}</font></h5></b></a></li>
-                    <li class=""><a href="#"><b><h5><font color="white">{{language.photographerPortal}}</font></h5></b></a></li>
+                    <li class=""><a href="#"><b><h5><font color="white">{{language.photographerPortal}}</font></h5></b></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="btn-group" role="group" aria-label="...">
-        <div class="btn-group" role="group">
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                Destination Search Box
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Dropdown link</a></li>
-                <li><a href="#">Dropdown link</a></li>
+
+    <form class="form-inline">
+        <div id="bottom-div" style="line-height: 50px;">
+        <div class="form-group" >
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                        aria-expanded="false">
+                    Destination Search Box
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">UK</label>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">France</label>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Italy</label>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Spain</label>
+                        </div>
+                    </a></li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown form-group">
+            <a class="dropdown-toggle" id="dropdown2" role="button" data-toggle="dropdown">
+                <div class="input-group"><input type="text" class="form-control" data-ng-model="data.dateDropDownInput"
+                                                placeholder="Start Date"><span
+                        class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                </div>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <datetimepicker data-ng-model="data.dateDropDownInput"
+                                data-datetimepicker-config="{ dropdownSelector: '#dropdown2' }"/>
+            </ul>
+
+        </div>
+        <div class="dropdown form-group">
+            <a class="dropdown-toggle" id="dropdown3" role="button" data-toggle="dropdown">
+                <div class="input-group"><input type="text" class="form-control"
+                                                data-ng-model="data.dateDropDownInput" placeholder="End Date"><span
+                        class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                </div>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <datetimepicker data-ng-model="data.dateDropDownInput"
+                                data-datetimepicker-config="{ dropdownSelector: '#dropdown3' }"/>
             </ul>
         </div>
-        <button type="button" class="btn btn-default">1</button>
-        <button type="button" class="btn btn-default">2</button>
+        <div class="form-group">
+            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"
+                                                                aria-hidden="true"></span></button>
+        </div>
+        </div>
+    </form>
 
 
-    </div>
 </div>
 
+</div>
 
