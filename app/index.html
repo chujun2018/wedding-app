@@ -1,99 +1,111 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
-  <link rel="stylesheet" href="bower_components/angular-bootstrap-datetimepicker/src/css/datetimepicker.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="bower_components/angular-bootstrap-datetimepicker/src/css/datetimepicker.css"/>
 </head>
 <body>
-  <!--<ul class="menu">-->
-    <!--<li><a href="#/view1">view1</a></li>-->
-    <!--<li><a href="#/view2">view2</a></li>-->
-  <!--</ul>-->
+<!--<ul class="menu">-->
+<!--<li><a href="#/view1">view1</a></li>-->
+<!--<li><a href="#/view2">view2</a></li>-->
+<!--</ul>-->
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
-  <nav class="navbar navbar-default" ng-show="false">
+<nav class="navbar navbar-default" ng-show="false">
     <div class="container-fluid" ng-controller="mainCtrl  ">
-      <div class="navbar-header">
-        <a class="navbar-brand">{{language.title}}</a>
-      </div>
-      <div>
-        <ul class="nav navbar-nav">
-          <li class="{{mainActive}}"><a href="#/home">{{language.home}}</a></li>
-          <li class=""><a href="#/view2" >{{language.phtographer}}</a></li>
-          <li class=""><a href="" data-toggle="modal" data-target="#myModal">{{language.contact}}</a></li>
-        </ul>
-        <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="{{language.search}}">
-          </div>
-        </form>
+        <div class="navbar-header">
+            <a class="navbar-brand">{{language.title}}</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="{{mainActive}}"><a href="#/home">{{language.home}}</a></li>
+                <li class=""><a href="#/view2">{{language.phtographer}}</a></li>
+                <li class=""><a href="" data-toggle="modal" data-target="#myModal">{{language.contact}}</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="{{language.search}}">
+                </div>
+            </form>
 
-        <form class="navbar-form navbar-right" role="search">
-          <button type="submit" class="btn btn-primary" ng-click="switch2Chinese()">中文</button>
-          <button type="submit" class="btn btn-primary" ng-click="switch2English()">English</button>
-        </form>
-      </div>
+            <form class="navbar-form navbar-right" role="search">
+                <button type="submit" class="btn btn-primary" ng-click="switch2Chinese()">中文</button>
+                <button type="submit" class="btn btn-primary" ng-click="switch2English()">English</button>
+            </form>
+        </div>
     </div>
-  </nav>
-  <div>
+</nav>
+<div>
     <div>
-      <div ng-view></div>
+        <div ng-view></div>
     </div>
 </div>
-  <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-    Legal About US Contact US
-  </nav>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header alert alert-info">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">{{language.contact}}</h4>
-        </div>
-        <div class="modal-body">
-          <p>Mobile: 07988046179</p>
-          <p>Email: wedding_photos@hotmail.com</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
+<hr>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="row" style="padding-top:10px;padding-left:500px">
+        <div class="col-md-2"><font color="white"><b>Legal</b></font></div>
+        <div class="col-md-2"><font color="white"><b>About Us</b></font></div>
+        <div class="col-md-2"><font color="white"><b>Contact US</b></font></div>
     </div>
-  </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header alert alert-info">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">{{language.contact}}</h4>
+            </div>
+            <div class="modal-body">
+                <p>Mobile: 07988046179</p>
+
+                <p>Email: wedding_photos@hotmail.com</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="home/home.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="bower_components/moment/moment.js"></script>
-  <script type="text/javascript" src="bower_components/angular-bootstrap-datetimepicker/src/js/datetimepicker.js"></script>
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="view1/view1.js"></script>
+<script src="home/home.js"></script>
+<script src="view2/view2.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bower_components/moment/moment.js"></script>
+<script type="text/javascript"
+        src="bower_components/angular-bootstrap-datetimepicker/src/js/datetimepicker.js"></script>
 </body>
 </html>
