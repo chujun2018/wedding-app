@@ -10,6 +10,7 @@ angular.module('myApp.home', ['ngRoute', 'ui.bootstrap.datetimepicker'])
 }])
 
 .controller('homeCtrl', ['$scope','$rootScope',function($scope, $rootScope) {
+ $rootScope.showTop = false;
 $rootScope.background = 'bg-img-default';
       $scope.ukPictures = [
       {url:'http://www.energyphotographic.co.uk/wp-content/uploads/2012/02/The-Goring-Hotel-London-Wedding-Photographer044.jpg'},

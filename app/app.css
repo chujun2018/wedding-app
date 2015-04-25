@@ -30,16 +30,15 @@
 }
 
 .bg-img-default {
-    background-image:url("image/london.jpg");
+    background-image:url("http://weddings.garretthubbard.com/wp-content/uploads/2013/12/dc-wedding-photographers-umbrella-wedding-rain.jpg");
     background-repeat:repeat-x;
     background-size: 100%;
     height:600px;
 
 }
 
-.bg-img-france {
-    background-image:url("http://img0.mxstatic.com/wallpapers/20d68c77a63c018bc59df097b24f59ad_large.jpeg");
-    background-repeat:repeat-x;
+.bg-img-home {
+    background-image:url("http://bgfons.com/upload/ornaments_texture1132.jpg");
     background-size: 100%;
 
 }
@@ -96,6 +95,32 @@
     padding-left: 25%;
 }
 
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.center2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.center3 {
+    margin-left: auto;
+    margin-right: 10px;
+    width: 15%;
+}
+
+.center4 {
+    margin-left: 40px;
+    margin-right: auto;
+    width: 100%;
+}
+
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
 
 
 
