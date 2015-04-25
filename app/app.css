@@ -37,8 +37,20 @@
 
 }
 
+.bg-img-default2 {
+     background-image:url("http://weddings.garretthubbard.com/wp-content/uploads/2013/12/dc-wedding-photographers-umbrella-wedding-rain.jpg");
+     background-repeat:repeat-x;
+     background-size: 100%;
+ }
+
+ .bg-img-default3 {
+      background-image:url("http://juliewight.com/wp-content/uploads/2013/11/colorful-backgrounds-for-desktop.jpg");
+      background-repeat:repeat-x;
+      background-size: 100%;
+  }
+
 .bg-img-home {
-    background-image:url("http://bgfons.com/upload/ornaments_texture1132.jpg");
+    background-image:url("http://www.millionglitters.com/background/thumb/skulls/skulls-background-pattern-0622.jpg");
     background-size: 100%;
 
 }
@@ -119,8 +131,7 @@
     width: 100%;
 }
 
-.carousel .carousel-control { visibility: hidden; }
-.carousel:hover .carousel-control { visibility: visible; }
+
 
 
 

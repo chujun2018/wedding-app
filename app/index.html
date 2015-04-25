@@ -31,41 +31,58 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<nav class="navbar navbar-default" ng-show="showTop">
-    <div class="container-fluid" ng-controller="mainCtrl  ">
+<!--<nav class="navbar navbar-default" ng-show="showTop">-->
+    <!--<div class="container-fluid" ng-controller="mainCtrl  ">-->
+        <!--<div class="navbar-header">-->
+            <!--<a class="navbar-brand">{{language.title}}</a>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li class="{{mainActive}}"><a href="#/home">{{language.home}}</a></li>-->
+                <!--<li class=""><a href="#/view2">{{language.phtographer}}</a></li>-->
+                <!--<li class=""><a href="" data-toggle="modal" data-target="#myModal">{{language.contact}}</a></li>-->
+            <!--</ul>-->
+            <!--<form class="navbar-form navbar-left" role="search">-->
+                <!--<div class="form-group">-->
+                    <!--<input type="text" class="form-control" placeholder="{{language.search}}">-->
+                <!--</div>-->
+            <!--</form>-->
+
+            <!--<form class="navbar-form navbar-right" role="search">-->
+                <!--<button type="submit" class="btn btn-primary" ng-click="switch2Chinese()">中文</button>-->
+                <!--<button type="submit" class="btn btn-primary" ng-click="switch2English()">English</button>-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</nav>-->
+<nav class="navbar navbar-inverse bg-img-default2" ng-show="showTop">
+    <div class="container-fluid" ng-controller="mainCtrl">
         <div class="navbar-header">
-            <a class="navbar-brand">{{language.title}}</a>
+            <a class="navbar-brand" href="#/home"><h5><b><font color="white"  size="4"><span
+                    class="glyphicon glyphicon-camera" aria-hidden="true"></span> {{language.title}}</font></b></h5>
+            </a>
         </div>
         <div>
-            <ul class="nav navbar-nav">
-                <li class="{{mainActive}}"><a href="#/home">{{language.home}}</a></li>
-                <li class=""><a href="#/view2">{{language.phtographer}}</a></li>
-                <li class=""><a href="" data-toggle="modal" data-target="#myModal">{{language.contact}}</a></li>
+            <ul class="nav pull-right navbar-nav">
+                <li class=""><a href="#"><b><h5><font color="white" size="3"><b>{{language.signUp}}</b></font></h5></b></a></li>
+                <li class=""><a href="#"><b><h5><font color="white" size="3"><b>{{language.logIn}}</b></font></h5></b></a></li>
+                <li class=""><a href="#"><b><h5><font color="orange" size="3"><b>{{language.photographerPortal}}</b></font></h5></b></a>
+                </li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="{{language.search}}">
-                </div>
-            </form>
-
-            <form class="navbar-form navbar-right" role="search">
-                <button type="submit" class="btn btn-primary" ng-click="switch2Chinese()">中文</button>
-                <button type="submit" class="btn btn-primary" ng-click="switch2English()">English</button>
-            </form>
         </div>
     </div>
 </nav>
 <div>
     <div>
-        <div ng-view></div>
+        <div class="" ng-view></div>
     </div>
 </div>
 <hr>
-<nav class="navbar navbar-inverse" role="navigation">
+<nav class="navbar bg-img-home navbar-fixed-bottom" role="navigation">
     <div class="row center4" style="padding-top:10px;padding-left:500px">
-        <div class="col-md-2"><font color="white"><b>Legal</b></font></div>
-        <div class="col-md-2"><font color="white"><b>About Us</b></font></div>
-        <div class="col-md-2"><font color="white"><b>Contact US</b></font></div>
+        <div class="col-md-2"><a href="#"><b><h5><font color="white" size="3"><b>Legal</b></font></h5></b></a></div>
+        <div class="col-md-2"><a href="#"><b><h5><font color="white" size="3"><b>About us</b></font></h5></b></a></div>
+        <div class="col-md-2"><a href="#"><b><h5><font color="white" size="3"><b>Contact us</b></font></h5></b></a></font></div>
     </div>
 </nav>
 <!-- Modal -->
