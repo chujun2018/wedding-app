@@ -5,6 +5,9 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.home',
   'myApp.search',
+  'myApp.photographers',
+  'myApp.signup',
+  'myApp.users',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider, $rootScope, $scope) {

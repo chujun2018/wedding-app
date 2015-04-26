@@ -34,8 +34,18 @@
 
             </div>
             <br>
-            <div class="jumbotron">
-
+            <div class="jumbotron row" ng-repeat="photographer in photographers">
+                <div class="col-md-4">
+                    <img src="{{photographer.photo}}" height="100" width="100" style="border-radius:75px">
+                </div>
+                <div class="col-md-4">
+                    <p>Name: {{photographer.name}}</p>
+                    <p>Location: {{photographer.Location}}</p>
+                    <p>Rating: {{photographer.rating}}</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="glyphicon glyphicon-star"></p>
+                </div>
             </div>
         </div>
 
