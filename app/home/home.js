@@ -10,6 +10,12 @@ angular.module('myApp.home', ['ngRoute', 'ui.bootstrap.datetimepicker'])
 }])
 
 .controller('homeCtrl', ['$scope','$rootScope',function($scope, $rootScope) {
+
+    $rootScope.login= false;
+    $rootScope.showUser = function(){
+    $rootScope.login = true;
+    }
+
  $rootScope.showTop = false;
 $rootScope.background = 'bg-img-default';
       $scope.ukPictures = [

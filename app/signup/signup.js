@@ -11,4 +11,5 @@ angular.module('myApp.signup', ['ngRoute', 'ui.bootstrap.datetimepicker'])
 
 .controller('signupCtrl', ['$scope','$rootScope',function($scope, $rootScope) {
     $rootScope.showTop = true;
+
 }]);

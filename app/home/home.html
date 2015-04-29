@@ -8,10 +8,12 @@
                 </a>
             </div>
             <div>
-                <ul class="nav pull-right navbar-nav">
-                    <li class=""><a href="" data-toggle="modal" data-target=".bs-example-modal-lg"><b><h5><font color="white" size="3"><b>{{language.signUp}}</b></font></h5></b></a></li>
-                    <li class=""><a href="" data-toggle="modal" data-target=".bs-example-modal-sm"><b><h5><font color="white" size="3"><b>{{language.logIn}}</b></font></h5></b></a></li>
-                    <li class=""><a href="#"><b><h5><font color="orange" size="3"><b>{{language.photographerPortal}}</b></font></h5></b></a>
+                <ul class="nav pull-right navbar-nav"   >
+                    <li ng-show="login"><a href="#/users" ><b><h5><font color="white" size="3"><b>Hi, User!</b></font></h5></b></a></li>
+                    <li ng-show="login"><a href="" ><b><h5><font color="Orange" size="3"><b>Inbox</b></font></h5></b></a></li>
+                    <li ng-hide="login" data-toggle="modal" data-target=".bs-example-modal-lg"><a href="" ><b><h5><font color="white" size="3"><b>{{language.signUp}}</b></font></h5></b></a></li>
+                    <li ng-hide="login" ng-click="showUser()"><a href="#/users" ><b><h5><font color="white" size="3"><b>{{language.logIn}}</b></font></h5></b></a></li>
+                    <li ng-hide="login" ng-click="showUser()"><a href="#/photographers" ng-click="showUser()"><b><h5><font color="orange" size="3"><b>{{language.photographerPortal}}</b></font></h5></b></a>
                     </li>
                 </ul>
             </div>
@@ -30,22 +32,22 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">
+                    <li><a href="">
                         <div class="checkbox">
                             <label><input type="checkbox" value="">UK</label>
                         </div>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="">
                         <div class="checkbox">
                             <label><input type="checkbox" value="">France</label>
                         </div>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="">
                         <div class="checkbox">
                             <label><input type="checkbox" value="">Italy</label>
                         </div>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="">
                         <div class="checkbox">
                             <label><input type="checkbox" value="">Spain</label>
                         </div>
@@ -95,44 +97,45 @@
     <footer>Discover the best of our <cite title="Source Title">Collections.</cite></footer>
 </blockquote>
 <br>
+<div class="container">
 <div class="row center4" >
         <div class="item col-md-4" >
-            <img src="http://perfectmomentfilms.co.uk/wp-content/uploads/2015/01/Wedding_photo.jpg" alt="..." style="height:400px">
+            <img src="http://perfectmomentfilms.co.uk/wp-content/uploads/2015/01/Wedding_photo.jpg" alt="..." style="height:300px">
             <div class="carousel-caption">
-                <h3>Photo Title</h3>
-                <p>Description</p>
+                <h3>France</h3>
+                <p>Romantic</p>
             </div>
         </div>
     <div class="item col-md-4" style="padding-left:100px">
-        <img src="http://www.dorchestercollection.com/uploads/images/HotelBelAir/FullLengthImages/Medium/Wedding_couple_HBA.jpg" alt="..." style="height:400px">
+        <img src="http://www.dorchestercollection.com/uploads/images/HotelBelAir/FullLengthImages/Medium/Wedding_couple_HBA.jpg" alt="..." style="height:300px">
         <div class="carousel-caption">
-            <h3>Photo Title</h3>
-            <p>Description</p>
+            <h3>Spain</h3>
+            <p>Exotic</p>
         </div>
     </div>
 </div>
 <br>
 <div class="row center4">
     <div class="item col-md-4" >
-        <img src="http://greenweddingshoes.com/wp-content/uploads/2013/08/UKedpeers-wedding-01.jpg" alt="..." style="height:400px">
+        <img src="http://greenweddingshoes.com/wp-content/uploads/2013/08/UKedpeers-wedding-01.jpg" alt="..." style="height:300px">
         <div class="carousel-caption">
-            <h3>Photo Title</h3>
-            <p>Description</p>
+            <h3>Countryside</h3>
+            <p>Wild Beauty</p>
         </div>
     </div>
     <div class="item col-md-3" style="padding-left:120px">
-        <img src="http://bestweddinginviations.com/wp-content/uploads/2015/03/best-wedding-dresses-uk-photos-2015.jpg" alt="..." style="height:400px">
-        <div class="carousel-caption">
-            <h3>Photo Title</h3>
-            <p>Description</p>
+        <img src="http://bestweddinginviations.com/wp-content/uploads/2015/03/best-wedding-dresses-uk-photos-2015.jpg" alt="..." style="height:300px">
+        <div class="carousel-caption" style="padding-left:70px">
+            <h3>Portrait</h3>
+            <p>Passion</p>
         </div>
     </div>
 
-    <div class="item col-md-4" style="padding-left:50px">
-        <img src="http://www.mossbroshire.co.uk/media/adminforms/mosshomepagetopimages/cache/1/cache/5e06319eda06f020e43594a9c230972d/w/e/wedding-hire_version3.jpg" alt="..." style="height:400px">
+    <div class="item col-md-4" style="padding-left:120px">
+        <img src="http://www.mossbroshire.co.uk/media/adminforms/mosshomepagetopimages/cache/1/cache/5e06319eda06f020e43594a9c230972d/w/e/wedding-hire_version3.jpg" alt="..." style="height:300px">
         <div class="carousel-caption">
-            <h3>Photo Title</h3>
-            <p>Description</p>
+            <h3>Cambridge</h3>
+            <p>Classic</p>
         </div>
     </div>
 
@@ -140,21 +143,22 @@
 <br>
 <div class="row center4">
     <div class="item col-md-4" >
-        <img src="http://www.homewoodpark.co.uk/content/uploads/2012/03/xWeddings1.jpg.pagespeed.ic.ZT_-pYQCr2.jpg" alt="..." style="height:400px">
+        <img src="http://www.homewoodpark.co.uk/content/uploads/2012/03/xWeddings1.jpg.pagespeed.ic.ZT_-pYQCr2.jpg" alt="..." style="height:250px">
         <div class="carousel-caption">
-            <h3>Photo Title</h3>
-            <p>Description</p>
+            <h3>Wedding Ceremony</h3>
+            <p>Magical Moment</p>
         </div>
     </div>
-    <div class="item col-md-4" style="padding-left:150px">
-        <img src="http://www.wedding-car.co.uk/images/homepage/main-image/couple-with-alice.jpg" alt="..." style="height:400px">
-        <div class="carousel-caption">
-            <h3>Photo Title</h3>
-            <p>Description</p>
+    <div class="item col-md-4" style="padding-left:175px">
+        <img src="http://www.wedding-car.co.uk/images/homepage/main-image/couple-with-alice.jpg" alt="..." style="height:250px">
+        <div class="carousel-caption" style="padding-left:100px">
+            <h3>Favourite Theme</h3>
+            <p>Choice</p>
         </div>
     </div>
 </div>
 
+</div>
 
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" >
     <div class="modal-dialog modal-lg" >
@@ -196,27 +200,27 @@
         </div>
     </div>
 </div>
-
+<br><br><br>
 
 
 
 
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" >
-    <div class="modal-dialog modal-sm" >
+    <div class="modal-dialog modal-lg" >
         <div class="modal-content" style="padding-left:50px">
             <h1>Log In</h1>
-            <br>
+            <hr>
             <form class="form-horizontal">
                 <div class="form-group" >
-                    <label for="username2" class="col-sm-3 control-label">Username</label>
-                    <div class="col-sm-6">
+                    <label for="username2" class="col-sm-4 control-label">Username</label>
+                    <div class="col-sm-4">
                         <input type="text" class="form-control" id="username2" placeholder="Username">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="password2" class="col-sm-3 control-label">Password</label>
-                    <div class="col-sm-6">
+                    <label for="password2" class="col-sm-4 control-label">Password</label>
+                    <div class="col-sm-4">
                         <input type="password" class="form-control" id="password2" placeholder="Password">
                         <br>
                         <button class="btn btn-primary">Log In</button>
