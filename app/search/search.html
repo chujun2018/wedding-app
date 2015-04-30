@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-3" style="padding-left:40px">
             <div class="form-group has-feedback">
-                <input type="text" class="form-control" placeholder="Search"/>
+                <input type="text" class="form-control" placeholder="Search" ng-model="searchText"/>
                 <i class="glyphicon glyphicon-search form-control-feedback"></i>
             </div>
             <div class="list-group">
@@ -34,7 +34,7 @@
 
             </div>
             <br>
-            <div class="jumbotron row" ng-repeat="photographer in photographers">
+            <div class="jumbotron row" ng-repeat="photographer in photographers | filter:searchText">
                 <div class="col-md-4">
                     <img src="{{photographer.photo}}" height="100" width="100" style="border-radius:75px">
                 </div>
